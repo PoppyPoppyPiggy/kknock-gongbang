@@ -38,30 +38,6 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="create_post.php" class="create-post-button">Create Post</a>
-        <table>
-            <tr>
-                <th>Post ID</th>
-    <th>Title</th>
-                <th>Author</th>
-                <th>Date</th>
-                <th>Actions</th>
-            </tr>
-            <?php while ($row = $result->fetch_assoc()): ?>
-            <tr>
-                <td><?php echo $row['post_order']; ?></td>
-                <td><a href="view_post.php?id=<?php echo $row['id']; ?>"><?php echo $row['title>
-                <td><?php echo $row['realusername']; ?></td>
-                <td><?php echo $row['created_at']; ?></td>
-                <td>w
-                    <?php if (isset($_SESSION['realusername']) && $_SESSION['realusername'] ===>
-                        <a href="board.php?delete_id=<?php echo $row['id']; ?>">Delete</a>
-                    <?php endif; ?>
-                </td>
-            </tr>
-            <?php endwhile; ?>
-        </table>
     </div>
         <div>
                   <form action="search.php" method="GET">
