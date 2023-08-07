@@ -122,3 +122,6 @@ $result = $mysqli->query($sql);
 
 
 
+<?php
+$mysqli->close();
+?>
