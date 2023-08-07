@@ -120,7 +120,5 @@ $result = $mysqli->query($sql);
 </body>
 </html>
 
-<?php
-$mysqli->close();
-?>
+
 
